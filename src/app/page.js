@@ -27,6 +27,7 @@ import {
 } from "@/components/ui/card"
 
 
+
 // __________________________________________________
 
 //Load More Btn  btn import
@@ -37,6 +38,7 @@ import { CardContainer,Searchinput} from "@/components/LoadMoreBtn"
 export default function page() {
     return (
         <div suppressHydrationWarning>
+        
            < Navbar suppressHydrationWarning></Navbar>
            <AspectRatioDemo suppressHydrationWarning>
 
@@ -98,7 +100,7 @@ export function AspectRatioDemo() {
   return (
     <div ratio={1 / .5} className=" md:flex-row  flex-col flex justify-between px-5">
       <div>
-      <h1 className="md:text-6xl  text-3xl font-bold md:mt-[24vh] mt-[10vh]	">Downlod 1000 kurdish <br />fonts with K-Fonts </h1>
+      <h1 className="md:text-6xl  text-3xl font-bold md:mt-[24vh] mt-[10vh]	">Downlod 1400+ kurdish <br />fonts with K-Fonts </h1>
       <div className="mt-[15vh] flex justify-center md:gap-x-16 gap-x-10">
       <Button  className="px-10 py-6" >Get Started</Button>
       <DialogCloseButton ></DialogCloseButton>
@@ -133,7 +135,7 @@ export function DialogCloseButton() {
         <DialogHeader>
           <DialogTitle>Share link</DialogTitle>
           <DialogDescription className="text-red-500">
-            www.k-fonts.com
+          https://6683db1bab199f2cdbbd1f1c--ubiquitous-druid-905c51.netlify.app/
           </DialogDescription>
         </DialogHeader>
        
@@ -164,13 +166,13 @@ export function FontCard({ ref, className,folderName, fontName, ...props }) {
     <Card ref={ref} className={cn("w-[380px] mx-auto	 h-[200px]", className)} {...props}>
       <CardHeader>
         <CardTitle>{fontName.slice(0, -4)}</CardTitle>
-        <CardDescription>You can downlod this staning font and 1000+ other fonts here .</CardDescription>
+        <CardDescription>You can downlod this staning font and 1400+ other fonts here .</CardDescription>
       </CardHeader>
     
       <CardFooter>
       <a href={ganarteUrl(folderName,fontName)} download={true} className="flex w-full">  
         <Button className="w-full mt-6">
-          <DownlodIcon/> <span className="ml-2" > Downloed the font</span>     
+          <DownlodIcon/> <span className="ml-2" > Downloed the Font</span>     
         </Button>
       </a>
       </CardFooter>
