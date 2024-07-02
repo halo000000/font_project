@@ -129,13 +129,13 @@ export function DialogCloseButton() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button  className="px-14 py-6" variant="outline">Share</Button>
+        <Link href="https://t.me/HAlwest0_0" target="_blank"><Button  className="px-14 py-6" variant="outline">Contact Me</Button></Link>
       </DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>Share link</DialogTitle>
+          <DialogTitle>Contact Me here</DialogTitle>
           <DialogDescription className="text-red-500">
-          https://6683db1bab199f2cdbbd1f1c--ubiquitous-druid-905c51.netlify.app/
+            https://t.me/HAlwest0_0
           </DialogDescription>
         </DialogHeader>
        
